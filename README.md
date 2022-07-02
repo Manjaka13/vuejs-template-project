@@ -11,13 +11,19 @@ npm install
 ### Compiles and hot-reloads for development
 
 ```
-npm start
+npm run dev
 ```
 
-### Compiles and minifies for production
+### Outputs production in /dist
 
 ```
 npm run build
+```
+
+### Compiles production and serve it
+
+```
+npm start
 ```
 
 ### Lints files
