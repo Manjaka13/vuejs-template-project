@@ -1,0 +1,42 @@
+/*
+    Some usefull mixins
+*/
+
+// Removes element selection
+@mixin no-select {
+	user-select: none;
+}
+
+// Add some transition
+@mixin transition($duration: 0.2s) {
+	transition: all $duration ease-out;
+}
+
+// Add responsive
+@mixin screen-x($size: 0) {
+	@media only screen and (max-width: $size) {
+		@content;
+	}
+}
+@mixin screen-y($size: 0) {
+	@media only screen and (max-height: $size) {
+		@content;
+	}
+}
+
+// Flex manipulation
+@mixin flex {
+	display: flex;
+}
+@mixin flex-col($align-x: initial, $align-y: initial) {
+	@include flex;
+	flex-direction: column;
+	justify-content: $align-y;
+	align-items: $align-x;
+}
+@mixin flex-row($align-x: initial, $align-y: initial) {
+	@include flex;
+	flex-direction: row;
+	justify-content: $align-x;
+	align-items: $align-y;
+}

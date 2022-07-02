@@ -1,0 +1,17 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": false
+	},
+	"extends": ["eslint:recommended", "plugin:vue/vue3-recommended"],
+	"plugins": ["vue"],
+	"rules": {
+		"no-unused-vars": ["off"]
+	},
+	"settings": {
+		"vue": {
+			"version": "detect"
+		}
+	}
+}

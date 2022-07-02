@@ -1,0 +1,58 @@
+/*
+	Setup general styles
+*/
+
+body {
+	background: #282828;
+}
+
+#root,
+select,
+option,
+input {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1em;
+	color: rgb(60, 60, 60);
+}
+
+.container {
+	@include flex-row(initial, flex-start);
+	width: 1400px;
+	margin: auto;
+
+	@include screen-x(1700px) {
+		width: 1000px;
+	}
+
+	@include screen-x(1400px) {
+		width: 90%;
+	}
+
+	@include screen-x(900px) {
+		width: calc(100% - 20px);
+	}
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	@include transition;
+}
+
+ul {
+	list-style-type: none;
+}

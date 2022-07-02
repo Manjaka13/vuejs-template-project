@@ -1,0 +1,22 @@
+.app {
+	@include flex-col(center, center);
+	height: 100vh;
+	background: url(@/assets/cover.jpg) center center no-repeat;
+	background-size: cover;
+
+	&__box {
+		padding: 20px;
+		background: rgba(0, 0, 0, 0.6);
+		border-radius: 10px;
+		.logo {
+			display: block;
+			margin: auto;
+			width: 100px;
+		}
+		.title {
+			color: white;
+			padding-top: 20px;
+			text-align: center;
+		}
+	}
+}
